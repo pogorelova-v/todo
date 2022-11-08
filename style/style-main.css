@@ -54,16 +54,6 @@ button:hover{
 button:active{
     transform: scale(1.1);
 }
-section{
-    position: absolute;    
-    display: flex;
-    width: 99%;
-    height: 99%;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
 h1{
     display: none;
 }
@@ -74,3 +64,105 @@ h2{
     margin-bottom: 15px;
     font-family: 'Balsamiq Sans', cursive;
 }
+
+/* страница авторизации ---------------------------------------------------*/
+
+.authorization{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;    
+    display: flex;
+    width: 99%;
+    height: 99%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.authorization img{
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.wrap-user{
+    position: absolute;    
+    display: flex;
+    width: 99%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+}
+.wrap-user form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-user form input{
+    background-color: var(--text-color);
+    color: var(--button-tx-color);
+    border: none;
+    width: 95%;
+    height: 60px;
+    border-radius: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.wrap-user form input:last-child{
+    margin-bottom: 0;
+}
+.wrap-user form input:last-child{
+    background-color: var(--button-bg-color);
+}
+.wrap-user form input:last-child:hover{
+    background-color: var(--button-bg-hover-color);
+}
+.wrap-user form input:last-child:active{
+    transform: scale(1.1);
+}
+#oldUser{
+    margin-bottom: 30px;
+}
+
+
+
+/*   выбор блока ------------------------------------------------------------ */
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;    
+    display: flex;
+    width: 99%;
+    height: 99%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.selection img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.selection-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.selection-button button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+

@@ -19,27 +19,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style-main.css">
-    <link rel="stylesheet" href="style/style-authorization.css">
     <title>Мой Миньон</title>
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <h1>Лучший карманный помошник в твоём смартфоне</h1>
+    </header>
 
     <main>
+
         <section class="authorization">
-            <h1>Страница регистрацйии и авторизации</h1>
             <h2> - Что это он на нас смотрит? <br> - Джонни, ты его знаешь?</h2>
             <img src="assets/minion/min-start.png" alt="Подозрительные миньоны">
-            <button>Мы знакомы</button>
-            <button>Давай знакомиться</button>
+            <button id="oldUser">Мы знакомы</button>
+            <button id="newUser">Давай знакомиться</button>
+
+            <div id="wrapOldUser" class="wrap-user">
+                <form action="#" id="formOldUser">
+                    <input id="inpTextOld" type="text" name="nameOld" placeholder="Логин">
+                    <input id="inpPasswordOld" type="password" name="passwordOld" placeholder="Пароль">
+                    <input type="submit" value="Проверить">
+                </form>
+            </div>
+
+            <div id="wrapNewUser" class="wrap-user">
+                <form action="#">
+                    <input id="inpTextNew" type="text" name="nameNew" placeholder="Логин">
+                    <input id="inpPasswordNew" type="password" name="passwordNew" placeholder="Пароль">
+                    <input type="submit" value="Зарегистрировать">
+                </form>
+            </div>
         </section>
+
+        <section class="selection">
+            <h2>Ура ТЫ вернулся! <br> Приступим?</h2> <!--Можно заменить на имя пользователя в будущем-->
+            <img src="assets/minion/min-hello.png" alt="Приветственный миньон">
+            <div class="selection-button">
+                <button>Список покупок</button>
+                <button>Важные задачи</button>
+                <button>Пароли</button>
+                <button>Скриншоты</button>
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
         <a class="author" href="mailto:developer@don-dragon.ru"> &#169; 2022 developer@don-dragon.ru</a>
     </footer>
 
-    <script src="js/js-start"></script>
+    <script src="js/js-start.js"></script>
 </body>
 </html>
