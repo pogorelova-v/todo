@@ -65,9 +65,7 @@ h2{
     font-family: 'Balsamiq Sans', cursive;
 }
 
-/* страница авторизации ---------------------------------------------------*/
-
-.authorization{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +77,12 @@ h2{
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+/* страница авторизации ---------------------------------------------------*/
+
+.authorization{
+    display: none;  /*!!!!!!!!!!!!!!!!!!!*/
 }
 .authorization img{
     width: 80%;
@@ -137,18 +141,7 @@ h2{
 /*   выбор блока ------------------------------------------------------------ */
 
 .selection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;    
-    display: flex;
-    width: 99%;
-    height: 99%;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    display: none;
+    display: none;  /*!!!!!!!!!!!!!!!!!!!*/
 }
 .selection img{
     width: 70%;
@@ -166,3 +159,38 @@ h2{
     margin-bottom: 10px;
 }
 
+
+/*-------------------------------- 4 услуги верх меню--------------------*/
+
+.switch{
+    height: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.switch button{
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+}
+#switch-shopping{
+    background-image: url('../assets/icon/shop.png');
+}
+#switch-memory{
+    background-image: url('../assets/icon/memory.png');
+}
+#switch-passwords{
+    background-image: url('../assets/icon/key.png');
+}
+#switch-scrin{
+    background-image: url('../assets/icon/screen.png');
+}
+
+
+/*----------------покупки-------------------------------*/
+
+.shopping{
+    height: 85%;
+    width: 90%;
+}
